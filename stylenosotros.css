@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Hind Siliguri", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.4)
+    ), url(imagen/noso.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #5582e3;
+}
+.logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+/* img*/
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    text-align: center;
+}
+
+
+
+.header-content h1 { 
+    font-size: 75px;
+    line-height: 80px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.header-content p {
+    font-size: 17px;
+    color: #fff;
+    padding: 0 250px;
+    margin-bottom: 25px;
+}
+
+
+.info {
+    padding: 60px 0px;
+    display: flex;
+    align-items: center;
+}
+
+.info-img {
+    width: 50%;
+
+}
+
+.info-img img {
+    width: 450px;
+    height: 450px;
+}
+
+.info-txt {
+    width: 50%;
+}
+
+.info-txt h2 {
+    margin-top: 50px;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.info-txt h1 {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.info-txt p {
+    font-size: 18px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
