@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Roboto+Slab:wght@100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.scrol {
+    height: 100px;
+    
+}
+
+.menu.active {
+    background: #ffffff;
+    padding: 20px;
+    filter: drop-shadow(
+    0 0 10px rgba(0, 0, 0, 0.8)
+    );
+    z-index: 10
+}
+
+.active.menu.nav ul li a{
+    color: #000000;
+
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.7)
+    ), url(imagen/contactofondo.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.menu {
+    background: #ffffff;
+    position: fixed;
+    /*position: absolute;*/
+    margin: 0 auto;
+    padding: 7px 10px 0 10px;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.8s ease;
+}
+
+.menu .nav ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .nav ul li a {
+    font-size: 20px;
+    padding: 20px;
+    color: #000000;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .nav ul li a:hover {
+    color: #4a71dd;
+}
+.logo {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+/* img*/
+.logo img {
+    filter: drop-shadow(
+        0 0 10px rgb(0, 0, 0)
+    );
+    width: 120px;
+    height: auto;
+    padding: 0 0 0 25px;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 50px;
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:50px;
+    gap:10px;
+    width: 1000px;
+}
+
+
+
+
+
+.box-info {
+    color:#fff;
+    display:flex;
+    flex-direction: column;
+    gap:50px;
+}
+
+
+.box-info > h1 {
+    text-align: left;
+    letter-spacing: 5px;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    gap:25px
+}
+
+.data > p {
+    font-size: 1rem;
+}
+
+.data p i {
+    color: crimson;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+form {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    gap:15px;
+}
+
+.input-box {
+    position:relative;
+}
+
+.input-box > input {
+    width: 100%;
+    height: 40px;
+    padding: 0 10px;
+    outline:none;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    transition:.3s;
+    color:#fff;
+}
+
+.input-box > input::placeholder,
+.input-box > textarea::placeholder {
+    color:#a3a3a3; 
+}
+
+.input-box > input:focus::placeholder,
+.input-box > textarea:focus::placeholder {
+    color:transparent;
+}
+
+
+.input-box > input:focus,
+.input-box > textarea:focus {
+    border-bottom:3px solid rgb(40, 119, 24);
+    animation: shake .2s;
+}
+
+.input-box > textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px;
+    background: rgba(255 255 255 / .1);
+    border:3px solid transparent;
+    letter-spacing: 1px;
+    outline: none;
+    transition:.3s;
+    color:#fff;
+    letter-spacing: 1.5px;
+}
+
+.input-box > i {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color:rgba(255 255 255 / .3);
+    transition: .3s;
+}
+
+
+form > button {
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    background: rgb(4, 54, 146);
+    color:#fff;
+    border:none;
+    transition: .1s;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form > button:hover,
+.links > a:hover {
+    background: rgb(12, 80, 228);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* final */
+
+.footer {
+    padding: 45px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* img */
+.footer img {
+    width: auto;
+    height: 150px;
+}
+
+.footer ul img {
+    width: 150px;
+    height: auto;
+}
+
+.footer p {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+
+.links h4 {
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.links ul li a {
+    color: #000000;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+
+
+
+@media(max-width: 991px) {
+    .menu {
+        padding: 25px;
+        justify-content: space-between;
+    }
+
+    .menu-2 {
+        display: none;
+    }
+
+    .logo-1 {
+        width: 100px;
+    }
+
+    .logo-2 {
+        width: 0;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        display: none;
+    }
+
+    .menu .nav ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .nav {
+        display: initial;
+    }
+
+    .header {
+        min-height: 0vh;
+    }
+    .header-content {
+        padding: 100px 10px;
+    }
+
+    .header-content p {
+        padding: 0;
+    }
+
+/*  max-width: 1200px;
+    margin: 0 auto; 
+    display:grid;
+    grid-template-columns: repeat(2,50%);
+    padding:20px;
+    gap:10px;
+    width: 1000px;*/
+
+    .header-content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+
+    .container {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .menu {
+        width: 100%;
+        display: flex;
+        gap:20px;
+    }
+
+
+    .box-info {
+        gap:15px;
+    }
+
+    .box-info > h1 {
+        font-size: 1.5rem;
+    }
+
+
+
+
+    .footer {
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer img {
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .links h4 {
+        margin: 25px 0px 10px 0px;
+    }
+}

@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleproductos.css">
+    <link rel="icon" href="imagen/logo.ico">
+</head>
+<body>
+    <!-- ayuda para el responsib-->
+    <header class="header">
+        <div class="menu">
+            <a href="index.html" class="logo"><img src="imagen/logo.png" alt=""></a>
+            <!-- aquien talvez ponga / si no funciona-->
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagen/menu.png" class="menu-icono" alt="">
+            </label>
+
+
+            <!-- aqui creo que se unian las paginas-->
+            <nav class="nav">
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contactenos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <!-- cambiar text-->
+
+            <h1>Nuestos Productos</h1>
+            <p>
+                En D&J Medical, nos dedicamos a brindar una atención al cliente de calidad. Contamos con un equipo de asesores capacitados, siempre disponibles para ofrecer soluciones personalizadas y resolver cualquier duda o consulta que puedan tener nuestros clientes.
+            </p>
+        </div>
+
+    </header>
+
+
+    <section id="productos">
+        <h2></h2>
+
+        <!-- Carrusel para Productos 1 -->
+        <div class="carousel">
+            <h3>ANTIBIÓTICO</h3>
+            <div class="carousel-container">
+                <button class="prev" onclick="desplazarIzquierda(1)">&#10094;</button>
+                <div class="product-container fila-1">
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/antibiotico-1.png" alt="">
+                        <p>Azitromicina 500mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/antibiotico-1.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100',
+                            ] 
+                        })">Ver más</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/antibiotico-2.png" alt="">
+                        <p>Levofloxacino 500mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/antibiotico-2.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/antibiotico-3.png" alt="">
+                        <p>Clindamicina 300mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/antibiotico-3.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Cap. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/antibiotico-4.png" alt="">
+                        <p>Claritromicina 500mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/antibiotico-4.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+                    <!-- Añadir otros productos aquí -->
+                </div>
+                <button class="next" onclick="desplazarDerecha(1)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Carrusel para Productos 2 -->
+        <div class="carousel">
+            <h3>ANTIINFLAMATORIO</h3>
+            <div class="carousel-container">
+                <button class="prev" onclick="desplazarIzquierda(2)">&#10094;</button>
+                <div class="product-container fila-2">
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/ANTIINFLAMATORIO-1.png" alt="">
+                        <p>Dexametasona 4mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/ANTIINFLAMATORIO-2.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/ANTIINFLAMATORIO-2.png" alt="">
+                        <p>Naproxeno 550mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/ANTIINFLAMATORIO-1.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+                    
+
+                    <!-- Añadir otros productos aquí -->
+                </div>
+                <button class="next" onclick="desplazarDerecha(2)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Carrusel para Productos 3 -->
+        <div class="carousel">
+            <h3>ANTIMICÓTICO</h3>
+            <div class="carousel-container">
+                <button class="prev" onclick="desplazarIzquierda(3)">&#10094;</button>
+                <div class="product-container fila-3">
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/ANTIMICÓTICO-1.png" alt="">
+                        <p>Terbinafina 250mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/ANTIMICÓTICO-1.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+                    
+                    <!-- Añadir otros productos aquí -->
+                </div>
+                <button class="next" onclick="desplazarDerecha(3)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Carrusel para Productos 4 -->
+        <div class="carousel">
+            <h3>CARDIOMETABÓLICA</h3>
+            <div class="carousel-container">
+                <button class="prev" onclick="desplazarIzquierda(4)">&#10094;</button>
+                <div class="product-container fila-4">
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/CARDIOMETABÓLICA-1.png" alt="">
+                        <p>Atorvastatina 20mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/CARDIOMETABÓLICA-1.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/CARDIOMETABÓLICA-2.png" alt="">
+                        <p>Atorvastatina 40mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/CARDIOMETABÓLICA-2.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/CARDIOMETABÓLICA-3.png" alt="">
+                        <p>Dobesilato Calcio 500mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/CARDIOMETABÓLICA-3.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Cap. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/CARDIOMETABÓLICA-4.png" alt="">
+                        <p>Candersartán 16mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/CARDIOMETABÓLICA-4.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/CARDIOMETABÓLICA-5.png" alt="">
+                        <p>Irbesartan 300mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/CARDIOMETABÓLICA-5.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="tamaño" src="imagenpastillasmejorado/CARDIOMETABÓLICA-6.png" alt="">
+                        <p>Irbesartan 150mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/CARDIOMETABÓLICA-6.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/CARDIOMETABÓLICA-7.png" alt="">
+                        <p>Losartan 50 mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/CARDIOMETABÓLICA-7.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    
+                    <!-- Añadir otros productos aquí -->
+                </div>
+                <button class="next" onclick="desplazarDerecha(4)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Carrusel para Productos 5 -->
+        <div class="carousel">
+            <h3>NEUROCIENCIAS</h3>
+            <div class="carousel-container">
+                <button class="prev" onclick="desplazarIzquierda(5)">&#10094;</button>
+                <div class="product-container fila-5">
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/NEUROCIENCIAS-1.png" alt="">
+                        <p>Gabapentina 300mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/NEUROCIENCIAS-1.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Cap. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+                    <!-- Añadir otros productos aquí -->
+                </div>
+                <button class="next" onclick="desplazarDerecha(5)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Carrusel para Productos 6 -->
+        <div class="carousel">
+            <h3>RESPIRATORIA</h3>
+            <div class="carousel-container">
+                <button class="prev" onclick="desplazarIzquierda(6)">&#10094;</button>
+                <div class="product-container fila-6">
+                    <div class="product-card">
+                        <img class="tamaño" src="imagen/RESPIRATORIA-1.png" alt="">
+                        <p>Montelukast 4mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagen/RESPIRATORIA-1.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Mast. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="tamaño" src="imagen/RESPIRATORIA-2.png" alt="">
+                        <p>Montelukast 5mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagen/RESPIRATORIA-2.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Mast. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img class="tamaño" src="imagen/RESPIRATORIA-3.png" alt="">
+                        <p>Montelukast 10mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagen/RESPIRATORIA-3.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/RESPIRATORIA-4.png" alt="">
+                        <p>Desloratadina 5mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/RESPIRATORIA-4.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/RESPIRATORIA-5.png" alt="">
+                        <p>Acetilcisteina 200mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/RESPIRATORIA-5.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Gso. Caja x 50'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/RESPIRATORIA-6.png" alt="">
+                        <p>Levocetirizina 5mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/RESPIRATORIA-6.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/RESPIRATORIA-7.png" alt="">
+                        <p>Acetilcisteina 600mg
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/RESPIRATORIA-7.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Gso. Caja x 50'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    
+                    <!-- Añadir otros productos aquí -->
+                </div>
+                <button class="next" onclick="desplazarDerecha(6)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Carrusel para Productos 7 -->
+        <div class="carousel">
+            <h3>ANTIESPASMÓDICA</h3>
+            <div class="carousel-container">
+                <button class="prev" onclick="desplazarIzquierda(7)">&#10094;</button>
+                <div class="product-container fila-7">
+                    <div class="product-card">
+                        <img src="imagenpastillasmejorado/ANTIESPASMÓDICA-1.png" alt="">
+                        <p>Hioscina Butil Bromuro 10mg 
+                        </p>
+                        <button onclick="mostrarDetalles({ 
+                            titulo: 'imagenpastillasmejorado/ANTIESPASMÓDICA-1.png', 
+                            descripcion: [
+                                'PRESENTACIÓN:',
+                                'Tab. Rec. Caja x 100'
+                            ] 
+                        })">Ver más</button>
+                    </div>
+
+                    
+                    <!-- Añadir otros productos aquí -->
+                </div>
+                <button class="next" onclick="desplazarDerecha(7)">&#10095;</button>
+            </div>
+        </div>
+
+        <!-- Modal para la descripción detallada -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="cerrarModal()">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description">Descripción detallada del producto.</p>
+                <a href="contactenos.html" class="btn-ver-mas">Realizar pedido</a>
+            </div>
+        </div>
+    </section>
+    
+
+        <!-- final-->
+    <footer class="footer container">
+
+        <img class="logo-2" src="imagen/logo11.png" alt="">
+        <div class="links">
+            <h4>Contactanos</h4>
+            <ul>
+                <p>1 - 981336221</p>
+                <p>+51 922 292 518</p>
+                <p>+51 981 336 221</p>
+                <p>dyj.medicalsac@gmail.com</p>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="terminos.html">Términos y condiciones</a></li>
+                <li><a href="lolitica.html">Politicas de privacidad</a></li>
+            </ul>
+            <h4>ENCUESTA</h4>
+            <ul>
+                <li><a href="https://forms.gle/DYPHb4oVhFKPqjNBA"><img src="imagen/Encuesta.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Libro de reclamaciones</h4>
+            <ul>
+                <li><a href="https://forms.gle/NLqzdVguM5BwXAab6"><img src="imagen/libro_reclamaciones.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="script2.js"></script>
+</body>
+</html>

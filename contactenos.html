@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="stylecontacto.css">
+    <link rel="icon" href="imagen/logo.ico">
+    <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+        <!-- ayuda para el responsib-->
+        <header class="header">
+            <div class="menu">
+                <a href="index.html" class="logo"><img src="imagen/logo.png" alt=""></a>
+                <!-- aquien talvez ponga / si no funciona-->
+                <input type="checkbox" id="menu">
+                <label for="menu">
+                    <img src="imagen/menu.png" class="menu-icono" alt="">
+                </label>
+    
+    
+                <!-- aqui creo que se unian las paginas-->
+                <nav class="nav">
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contactenos.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+    
+            <div class="header-content">
+                <div class="box-info">
+                    <h1>CONTÁCTANOS MEDIANTE UN CORREO</h1>
+                    <div class="data">
+                        <p>En D&J Medical estamos aquí para atender tus consultas y necesidades. 
+                            Completa el formulario y nuestro equipo se pondrá en contacto contigo a la 
+                            brevedad. Nos comprometemos a responder con la información que necesites sobre 
+                            nuestros productos, servicios o cualquier otra inquietud.</p>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/cd5e351da126a50fc9648fc7b5f2070e" method="POST">
+                    <div class="input-box">
+                        <input type="text" name="Nombre" placeholder="Nombre y Apellido" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="email" name="Email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="Telefono" placeholder="Telefono" required>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" name="Producto" placeholder="Producto" required >
+                    </div>
+                    <div class="input-box">
+                        <textarea input type="text" name="Mensaje" cols="30" rows="10" name="" id="" placeholder="Deja tu mensaje..."></textarea>
+                    </div>
+                    <button type="submit">Enviar</button>
+
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/contactenos.html">
+                    <input type="hidden" name="_captcha" value="false">
+
+                </form>
+                
+            </div>
+    
+        </header>
+
+
+
+            <!-- final-->
+    <footer class="footer container">
+
+        <img class="logo-2" src="imagen/logo11.png" alt="">
+        <div class="links">
+            <h4>Contactanos</h4>
+            <ul>
+                <p>1 - 981336221</p>
+                <p>+51 922 292 518</p>
+                <p>+51 981 336 221</p>
+                <p>dyj.medicalsac@gmail.com</p>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="terminos.html">Términos y condiciones</a></li>
+                <li><a href="lolitica.html">Politicas de privacidad</a></li>
+            </ul>
+            <h4>ENCUESTA</h4>
+            <ul>
+                <li><a href="https://forms.gle/DYPHb4oVhFKPqjNBA"><img src="imagen/Encuesta.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Libro de reclamaciones</h4>
+            <ul>
+                <li><a href="https://forms.gle/NLqzdVguM5BwXAab6"><img src="imagen/libro_reclamaciones.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

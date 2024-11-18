@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&J Medical</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" 
+    integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imagen/logo.ico">
+</head>
+<body>
+    <!-- ayuda para el responsib-->
+    <header class="header">
+        <div class="menu">
+            <a href="index.html" class="logo"><img src="imagen/logo.png" alt=""></a>
+            <!-- aquien talvez ponga / si no funciona-->
+            <input type="checkbox" id="menu">
+            <label for="menu">
+                <img src="imagen/menu.png" class="menu-icono" alt="">
+            </label>
+
+
+            <!-- aqui creo que se unian las paginas-->
+            <nav class="nav">
+                <ul>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="contactenos.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+            <!-- cambiar text-->
+
+            <h1>D&J Medical</h1>
+            <p>D&J Medical se especializa en la comercialización de medicamentos genéricos y materiales médicos de alta calidad al por mayor. Nos enfocamos en brindar soluciones confiables y efectivas para el cuidado de la salud, con un firme compromiso con la calidad, la atención personalizada y la puntualidad en nuestras entregas.
+            </p>
+        </div>
+
+    </header>
+
+    <div class="carousel">
+        <div class="slides">
+            <div class="slide">
+                <img src="imagen/cliente1.png" alt="Imagen 1">
+                <div class="text">
+                    <h2>Atención</h2>
+                    <p>En D&J Medical, nos esforzamos por brindar una atención al cliente excepcional. Nuestro equipo de asesores altamente capacitados está listo para ofrecer soluciones a medida y atender cualquier consulta de manera oportuna.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imagen/labo1.png" alt="">
+                <div class="text">
+                    <h2>Calidad</h2>
+                    <p>Garantizamos la calidad de nuestros medicamentos genéricos a través de rigurosos controles y la colaboración con proveedores certificados. Nuestra misión es ofrecer soluciones farmacéuticas accesibles que contribuyan al bienestar y salud de nuestros clientes.</p>
+
+                </div>
+            </div>
+            <div class="slide">
+                <img src="imagen/puntualidad1.png" alt="Imagen 3">
+                <div class="text">
+                    <h2>Puntualidad</h2>
+                    <p>
+                        En D&J Medical, la puntualidad es fundamental. Nos comprometemos a entregar nuestros productos a tiempo, asegurando que nuestros clientes puedan cubrir sus necesidades de manera eficiente y sin contratiempos.</p>
+
+                </div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>    
+
+
+
+
+
+    <!-- carru-->
+
+    <div class="title-cards">
+        <h2>Noticias</h2>
+    </div>
+    <div class="container-card">
+        <div class="card">
+            <figure>
+                <img src="imagen/noticia-1.png" alt="">
+            </figure>
+
+            <div class="contenido-card">
+                <h3>Minsa invierte más de S/2 millones para capacitar a serumistas en todo el Perú</h3>
+                <p>Para capacitar gratis a serumistas en salud pública, atención integral, ética, investigación y gestión. El programa, vigente hasta abril de 2025, busca mejorar la atención primaria en zonas vulnerables.</p>
+                <a href="https://www.gob.pe/institucion/essalud/noticias/1052707-essalud-firma-alianzas-con-empresas-de-arequipa-para-prevenir-enfermedades-cronicas-en-trabajadores">Leer más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="imagen/noticia-2.jpeg" alt="">
+            </figure>
+            <div class="contenido-card">
+                <h3>EsSalud firma alianzas con empresas de Arequipa</h3>
+                <p>Para llevar el programa "Prevenir" a más de 300 trabajadores, ofreciendo despistajes de enfermedades crónicas y cáncer en sus centros laborales para mejorar su salud y calidad de vida.</p>
+                <a href="https://www.gob.pe/institucion/minsa/noticias/1050028-minsa-invierte-mas-de-s-2-millones-para-capacitar-a-serumistas-en-todo-el-peru">Leer más</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <figure>
+                <img src="imagen/notica-3.jpeg" alt="">
+            </figure>
+            <div class="contenido-card">
+                <h3>Ica: más de 77 000 menores de 6 años aseguraron su protección contra el sarampión</h3>
+                <p>Ica ha alcanzado el 88% de su meta de vacunación contra el sarampión en menores de 6 años y ha protegido a más de 60,800 niños contra la polio. La Diresa sigue cerrando brechas de vacunación en colaboración con el sector educativo y profesionales de salud locales.</p>
+                <a href="https://www.gob.pe/institucion/minsa/noticias/1049820-ica-mas-de-77-000-menores-de-6-anos-aseguraron-su-proteccion-contra-el-sarampion">Leer más</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- informacion para colocar a la otra pagina-->
+    <section class="horario">
+            <div class="horario-info container">
+
+            <h2>Horario</h2>
+            <div class="horario-txt">
+                <div class="txt">
+                    <h4>Dirección</h4>
+                    <p>SAN JUAN DE MIRAFLORES -  URB. SAN JUAN ZN. A</p>
+                </div>
+
+                <div class="txt">
+                    <h4>Horario</h4>
+                    <p>Lunes a Viernes - 7:00AM a 7:00PM</p>
+                </div>
+
+                <div class="txt">
+                    <h4>Telefono</h4>
+                    <p>+51 922 292 518</p>
+                </div>
+
+                <div class="txt">
+                    <h4>Gmail</h4>
+                    <p>dyj.medicalsac@gmail.com</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    
+
+    <section>
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d410.7283314774953!2d-76.97414519800586!3d-12.157778626254041!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDA5JzI3LjgiUyA3NsKwNTgnMjYuOSJX!5e1!3m2!1ses-419!2spe!4v1729478733781!5m2!1ses-419!2spe" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+
+    <footer class="footer container">
+
+        <img class="logo-2" src="imagen/logo11.png" alt="">
+        <div class="links">
+            <h4>Contactanos</h4>
+            <ul>
+                <p>1 - 981336221</p>
+                <p>+51 922 292 518</p>
+                <p>+51 981 336 221</p>
+                <p>dyj.medicalsac@gmail.com</p>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="terminos.html">Términos y condiciones</a></li>
+                <li><a href="lolitica.html">Politicas de privacidad</a></li>
+            </ul>
+            <h4>ENCUESTA</h4>
+            <ul>
+                <li><a href="https://forms.gle/DYPHb4oVhFKPqjNBA"><img src="imagen/Encuesta.jpg" alt=""></a></li>
+            </ul>
+        </div>
+
+        <div class="links">
+            <h4>Libro de reclamaciones</h4>
+            <ul>
+                <li><a href="https://forms.gle/NLqzdVguM5BwXAab6"><img src="imagen/libro_reclamaciones.png" alt=""></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- otro -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>
